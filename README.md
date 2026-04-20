@@ -35,6 +35,7 @@ A machine learning project that automatically classifies emails as **spam** or *
 
 ## 📁 Project Structure
 
+```
 spam-mail-detection/
 │
 ├── dataset/
@@ -53,9 +54,7 @@ spam-mail-detection/
 │
 ├── requirements.txt
 └── README.md
-
----
-
+```
 ## ⚙️ Installation & Setup
 
 ### 1. Clone the repository
