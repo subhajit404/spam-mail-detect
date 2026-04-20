@@ -57,15 +57,12 @@ spam-mail-detection/
 ```
 ## ⚙️ Installation & Setup
 
-### 1. Clone the repository
-git clone https://github.com/your-username/spam-mail-detection.git
-cd spam-mail-detection
 
-### 2. Create a virtual environment
+### 1. Create a virtual environment
 python -m venv venv
 source venv/bin/activate
 
-### 3. Install dependencies
+### 2. Install dependencies
 pip install -r requirements.txt
 
 ---
