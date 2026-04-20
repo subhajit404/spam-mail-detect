@@ -34,6 +34,7 @@ A machine learning project that automatically classifies emails as **spam** or *
 ---
 
 ## 📁 Project Structure
+
 spam-mail-detection/
 │
 ├── dataset/
@@ -52,60 +53,46 @@ spam-mail-detection/
 │
 ├── requirements.txt
 └── README.md
+
 ---
 
 ## ⚙️ Installation & Setup
 
 ### 1. Clone the repository
-
-```bash
 git clone https://github.com/your-username/spam-mail-detection.git
 cd spam-mail-detection
-```
 
-### 2. Create a virtual environment (recommended)
-
-```bash
+### 2. Create a virtual environment
 python -m venv venv
-source venv/bin/activate        # On Windows: venv\Scripts\activate
-```
+source venv/bin/activate
 
 ### 3. Install dependencies
-
-```bash
 pip install -r requirements.txt
-```
 
 ---
 
 ## ▶️ Usage
 
 ### Run the Jupyter Notebook
-
-```bash
 jupyter notebook notebooks/spam_detection.ipynb
-```
 
 ### Predict on a custom email
-
-```python
 from src.predict import predict_email
 
 email = "Congratulations! You've won a $1,000 gift card. Click here to claim now."
 result = predict_email(email)
 print(result)  # Output: SPAM
-```
 
 ---
 
 ## 📊 Model Performance
 
-| Metric | Score |
-|--------|-------|
-| Accuracy | ~97% |
-| Precision | ~98% |
-| Recall | ~96% |
-| F1-Score | ~97% |
+| Metric    | Score |
+|-----------|-------|
+| Accuracy  | ~97%  |
+| Precision | ~98%  |
+| Recall    | ~96%  |
+| F1-Score  | ~97%  |
 
 > Results may vary slightly based on train/test split and dataset version.
 
@@ -113,41 +100,50 @@ print(result)  # Output: SPAM
 
 ## 📂 Dataset
 
-This project uses the [SMS Spam Collection Dataset](https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset) which contains **5,572 labeled messages** (spam & ham).
+This project uses the SMS Spam Collection Dataset (https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset)
+which contains 5,572 labeled messages (spam & ham).
 
-- `label` → `spam` or `ham`
-- `text` → raw message content
+- label → spam or ham
+- text  → raw message content
 
 ---
 
 ## 🔍 How It Works
 
+Raw Email Text
+     ↓
+Text Preprocessing  (lowercase, remove punctuation, stopwords)
+     ↓
+Feature Extraction  (TF-IDF Vectorizer)
+     ↓
+ML Classifier       (e.g., Logistic Regression / Naive Bayes)
+     ↓
+Prediction: SPAM or HAM
+
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome! Feel free to open an issue or submit a pull request.
-
 1. Fork the project
-2. Create your feature branch (`git checkout -b feature/your-feature`)
-3. Commit your changes (`git commit -m 'Add your feature'`)
-4. Push to the branch (`git push origin feature/your-feature`)
+2. Create your feature branch (git checkout -b feature/your-feature)
+3. Commit your changes (git commit -m 'Add your feature')
+4. Push to the branch (git push origin feature/your-feature)
 5. Open a Pull Request
 
 ---
 
 ## 📄 License
 
-This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License — see the LICENSE file for details.
 
 ---
 
 ## 👤 Author
 
-**Your Name**
-- GitHub: [@your-username](https://github.com/your-username)
-- LinkedIn: [your-linkedin](https://linkedin.com/in/your-linkedin)
+Your Name
+- GitHub: https://github.com/your-username
+- LinkedIn: https://linkedin.com/in/your-linkedin
 
 ---
 
-> ⭐ If you found this project helpful, please give it a star on GitHub!
+⭐ If you found this project helpful, please give it a star on GitHub!
