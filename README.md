@@ -34,7 +34,24 @@ A machine learning project that automatically classifies emails as **spam** or *
 ---
 
 ## 📁 Project Structure
-
+spam-mail-detection/
+│
+├── dataset/
+│   └── mail_data.csv
+│
+├── notebooks/
+│   └── spam_detection.ipynb
+│
+├── src/
+│   ├── preprocess.py
+│   ├── train.py
+│   └── predict.py
+│
+├── model/
+│   └── spam_model.pkl
+│
+├── requirements.txt
+└── README.md
 ---
 
 ## ⚙️ Installation & Setup
